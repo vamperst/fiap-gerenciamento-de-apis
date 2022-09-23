@@ -1,4 +1,4 @@
-# 00 - Primeira API
+# 01 - Primeira API
 
 OBJETIVO: Criar a primeira api no serviço [Amazon API Gateway](https://aws.amazon.com/pt/api-gateway/) utilizando a estrutura de exemplo do painel.
 
