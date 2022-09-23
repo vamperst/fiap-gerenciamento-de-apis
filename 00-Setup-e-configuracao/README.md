@@ -16,9 +16,13 @@ Você irá utilizar 3 ferramentas para desenvolver os laboratorios:
 3. Dentro da plataforma clique em `cursos` na lateral esquerda e clique no curso da disciplina atual.
 ![](img/academy1.png)
 4. Dentro do curso clique em `Modules` na lateral esquerda
+   
    ![](img/academy2.png)
+
 5. Clique em `Lerner Lab` 
+   
    ![](img/academy3.png)
+
 6. Se for seu primeiro acesso irá aparecer o contrato de termos e condições para aceitar. Role até o final para aceitar após a leitura do mesmo. Caso já tenha feito isso antes. Pule para o passo 7.
    ![](img/academy4.png)
 7. Essa é a tela para acessar sua conta AWS. Cada sessão terá 4 horas. Após esse tempo você terá que começar outra sessão, mas os dados gravados dentro da conta AWS ficam salvos até o final do curso ou entrega do trabalho final da disciplina. Clique em `Start Lab` para iniciar uma sessão. Esse processo pode demorar alguns minutos.
