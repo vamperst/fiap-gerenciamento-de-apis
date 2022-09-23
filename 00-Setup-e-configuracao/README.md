@@ -1,4 +1,4 @@
-# 01 - Setup e Configuração de ambiente
+# 00 - Setup e Configuração de ambiente
 
 Você irá utilizar 3 ferramentas para desenvolver os laboratorios:
 1. Conta AWS através da AWS Academy. Conta provisionada para você utilizar durante essa disciplina com 100 dólares de crédito.
