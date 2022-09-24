@@ -167,5 +167,57 @@ exports.handler = async (event, context) => {
 
 ![](img/19.png)
 
-27. [Coleção Postman](https://raw.githubusercontent.com/vamperst/fiap-gerenciamento-de-apis/master/02-HTTP-API/http-crud-tutorial-api.postman_collection.json "download")
-28. <a id="download" href="https://raw.githubusercontent.com/vamperst/fiap-gerenciamento-de-apis/master/02-HTTP-API/http-crud-tutorial-api.postman_collection.json" target="_blank">Download FILE</a>
+27. Vamos executar os testes da API. Para isso abra o Postman na sua maquina local e clique em `import`. Dentro do selecione a aba `Link`.
+    
+    ![](img/20.png)
+
+28. No link copie o conteudo abaixo e clique em `continue`:
+```url
+https://raw.githubusercontent.com/vamperst/fiap-gerenciamento-de-apis/master/02-HTTP-API/http-crud-tutorial-api.postman_collection.json
+```
+![](img/21.png)
+
+29. Verifique as informações e clique em `Import`
+    
+    ![](img/22.png)
+
+30. Você irá precisar da URL base da sua API. Para isso abra seu painel do [API Gateway](https://us-east-1.console.aws.amazon.com/apigateway/main/apis?region=us-east-1), clique na api `http-crud-tutorial-api` e copie a URL descrita em `Invocar URL`
+    
+    ![](img/23.png)
+
+    ![](img/24.png)
+
+31. De volta ao POSTMAN, clique em `Collections`.
+    
+    ![](img/25.png)
+
+32. Clique em `http-crud-tutorial-api` e selecione a aba `Variables`
+    
+    ![](img/26.png)
+
+33. Na variavel BaseUrl cole a URL copiada da sua API onde esta escrito `SUA URL`
+    
+    ![](img/27.png)
+
+34. A primeira chamada que devemos fazer é para inserir objetos no banco. Para tal abra a chamada `PUT Items` do postman e clique na aba `Body`.
+    ![](img/28.png)
+35. Clique em `Send` e se tudo ocorrer bem você verá a mensagem `Put item 124` na parte inferior da página.
+36. Altere o valor do id no json 3 vezes com os valores abaixo e clique em `Send` para adicionar mais 3 itens na tabela.
+    1. Id: `123`
+    2. Id: `125`
+    3. Id: `126`
+
+![](img/30.png)
+
+37. Com 4 itens na tabela agora você irá listar esses itens. Clique em `GET Items` e então clique em `Send`. Esse método deve listar todos os objetos inseridos.
+    
+    ![](img/31.png)
+
+38. Para deletar um item clique em `DELETE Items/{id}`. Como pode ver na URL o item 124 esta descrito. Clique em `Send` para apagar esse item. 
+    
+    ![](img/32.png)
+
+39. Para ver que agora tem apenas 3 items no banco de dados você pode executar a listagem GET novamente.
+40. Para visualizar os itens diretamente na tabela do DynamoDB clique no [link](https://us-east-1.console.aws.amazon.com/dynamodbv2/home?region=us-east-1#item-explorer?initialTagKey=&table=http-crud-tutorial-items)
+
+![](img/33.png)
