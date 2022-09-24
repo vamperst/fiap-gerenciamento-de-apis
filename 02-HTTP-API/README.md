@@ -168,3 +168,4 @@ exports.handler = async (event, context) => {
 ![](img/19.png)
 
 27. [Coleção Postman](https://raw.githubusercontent.com/vamperst/fiap-gerenciamento-de-apis/master/02-HTTP-API/http-crud-tutorial-api.postman_collection.json "download")
+28. <a id="raw-url" href="https://raw.githubusercontent.com/vamperst/fiap-gerenciamento-de-apis/master/02-HTTP-API/http-crud-tutorial-api.postman_collection.json">Download FILE</a>
