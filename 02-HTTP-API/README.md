@@ -158,4 +158,13 @@ exports.handler = async (event, context) => {
 
 ![](img/17.png)
 
-26. 
+26. Repita o passo anterior mais 3 vezes alterando a rota alvo por:
+    1. PUT /items
+    2. GET /items
+    3. DELETE /items/{id}
+
+![](img/18.png)
+
+![](img/19.png)
+
+27. [Coleção Postman](https://raw.githubusercontent.com/vamperst/fiap-gerenciamento-de-apis/master/02-HTTP-API/http-crud-tutorial-api.postman_collection.json "download")
