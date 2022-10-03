@@ -56,7 +56,7 @@ Você irá utilizar 3 ferramentas para desenvolver os laboratorios:
 10. Execute o comando `npm install -g serverless` para instalar o serverless framework.
     ![img/installserverless.png](img/installserverless.png)
 11. Execute o comando `sudo apt  install jq -y` para instalar o software que irá nos ajudar a ler e manipular Jsons no terminal. Caso esse comando de erro, aguarde 3 minutos para o sistema terminar a preparação inicial.
-12. Execute o comando `npm install -g c9` para baixar a extenãp que ajudará o Cloud9 a lidar melhor com o como abrir arquivos no IDE.
+12. Execute o comando `npm install -g c9` para baixar a extenção que ajudará o Cloud9 a lidar melhor com o como abrir arquivos no IDE.
 13. Execute o comando `git clone https://github.com/vamperst/fiap-gerenciamento-de-apis.git` para clonar o repositório com os exercicios.
 14. Execute o comando `cd fiap-gerenciamento-de-apis/` para entrar na pasta criada pelo git
 15. Execute o comando `cd 00-Setup-e-configuracao` para entrar na pasta com os scripts de Configuração.
