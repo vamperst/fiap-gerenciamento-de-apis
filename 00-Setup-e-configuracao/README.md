@@ -12,7 +12,7 @@ Você irá utilizar 3 ferramentas para desenvolver os laboratorios:
    2. Seu email é no seguinte formato rm + numero do seu RM + @fiap.com.br. Caso seu RM seja por exemplo 12345 seu email seria rm12345@fiap.com.br. A senha é a mesma de portais.
    3. Você terá um email na caixa de entrada para convite do Academy, siga as instruções.
    4. Ao conseguir entrar na plataforma do academy, aparecerá uma turma que começa com `AWS Academy Learner Lab`. Apenas clique em `Enroll` para aceitar e acessar.
-2. Para entrar na conta do Academy que já existe, acesse o link:  [awsacademy.com/LMS_Login](https://www.awsacademy.com/LMS_Login)
+2. Para entrar na conta do Academy que já existe, acesse o link:  [awsacademy.com/LMS_Login](https://www.awsacademy.com/LMS_Login). Ao conseguir entrar na plataforma do academy, aparecerá uma turma que começa com AWS Academy Learner Lab. Apenas clique em Enroll para aceitar e acessar.
 3. Dentro da plataforma clique em `cursos` na lateral esquerda e clique no curso da disciplina atual.
 ![](img/academy1.png)
 4. Dentro do curso clique em `Modules` na lateral esquerda
