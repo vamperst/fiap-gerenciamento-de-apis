@@ -45,6 +45,7 @@ def lambda_handler(event, context):
 ![](img/4.png)
 
 9. Clique em `Ações` e então clique em `Criar recurso` para criar o caminho de usuarios da API.
+    
     ![](img/5.png)
 
 10. Preencha da seguinte maneira e clique em `Criar recurso`.
@@ -55,6 +56,7 @@ def lambda_handler(event, context):
 ![](img/6.png)
 
 11. De volta ao painel da api com o recurso user récem criado selecionado clique novamente em `Ações` e então clique em `Criar recurso`.
+
 ![](img/7.png)
 
 12. Preencha da seguinte maneira e clique em `Criar recurso`.
@@ -137,7 +139,9 @@ def lambda_handler(event, context):
 
 26. Para facilitar a vida de quem integra vamos criar um padrão de mensagem de erro para validação de corpo de mensagem onde a causa do erro apareça na resposta. Para tal, clique em `Respostas do gateway` na lateral esquerda do painel do api gateway.
 27. Selecione `Corpo de solicitação incorreto`, em modelos de resposta clique em `application/json` e clique em editar.
+   
     ![](img/24.png)
+
 28. Cole no `Corpo do modelo de resposta` o seguinte json:
 ``` json
 {"message": "$context.error.message", "error": "$context.error.validationErrorString"}
@@ -151,20 +155,31 @@ def lambda_handler(event, context):
     1. Estágio de implantação: `[Novo estágio]`
     2. Nome do estágio: `dev`
     3. Clique em `Implante`
+
 ![](img/18.png)
 
 28. Para fazer chamadas de teste clique na aba `Exportar` e clique em `Yaml` em `Exportar como Swagger + extensões do Postman` para baixar um arquivo a ser utilizado no Postman.
     ![](img/19.png)
 29. No Postman clique em `Import` e em `Upload Files` selecione o arquivo recem baixado.
+    
     ![](img/20.png)
+
 30. Clique em `Import` para finalizar a importação
+   
     ![](img/21.png)
+
 31. Na lateral esquerda do Postman clique em `Collections` e expanda `rest-api-with-validation` até conseguir clicar `POST /user/create`
+
 ![](img/22.png)
+
 32. Clique em `Send` na lateral direita e verá que a resposta apenas adiciona o campo Response ao objeto enviado. Isso aconteceu pois os campos foram vlaidados e aprovados.
+    
     ![](img/23.png)
+
 33. Altere o json que envia retirando o campo age e clique em `Send` para ver o comportamento de resposta da API.
+    
     ![](img/25.png)
+
 34. Faça testes com outros campos e formatos de envios para ver o comportamento das validações. Como por exemplo tentar colocar um mês com número acima de 12.
 35. Devolta ao painel da sua récem criada api no API Gateway no navegador, clique em `Chaves de API`.
 36. Clique em `Açoes` e `Criar chave de API`
