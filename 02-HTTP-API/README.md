@@ -195,7 +195,7 @@ https://raw.githubusercontent.com/vamperst/fiap-gerenciamento-de-apis/master/02-
     
     ![](img/26.png)
 
-33. Na variavel BaseUrl cole a URL copiada da sua API onde esta escrito `SUA URL`
+33. Na variavel BaseUrl cole a URL copiada da sua API onde esta escrito `SUA URL` e clique em `Save` no canto superior direito da tela.
     
     ![](img/27.png)
 
