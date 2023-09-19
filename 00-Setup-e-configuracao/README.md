@@ -42,25 +42,26 @@ Você irá utilizar 3 ferramentas para desenvolver os laboratorios:
    ![img/acharcloud9.png](img/acharcloud9.png)
 1. garanta que a região que esta utilizando é `us-east-1/ Norte da Virgínia`. Você consegue ver isso no canto superior direiro da tela.
     ![img/regiao.png](img/regiao.png)
- 2. Clique em `create environment`.
- 3. Coloque o nome `lab-fiap` e avance.
- ![img/nomelab.png](img/nomelab.png)
- 5. Deixe as configurações como na imagem a seguir. Se atente ao tipo da maquina que deve ser `t2.medium` e o sistema operacional `Ubuntu Server 18.04 LTS`:
-![img/config.png](img/config.png)
- 6. Caso os parametros estejam como na imagem a seguir clique em `Create Environment`
-   ![img/review.png](img/review.png)
- 7. A criação do ambiente pode levar alguns minutos.
+2. Clique em `create environment`.
+3. Coloque o nome `lab-fiap` .
+   ![img/nomelab.png](img/nomelab.png)
+4. Deixe as configurações como na imagem a seguir. Se atente ao tipo da maquina que deve ser `t2.medium` e o sistema operacional `Ubuntu Server 22.04 LTS`:
+   ![img/config.png](img/config.png)
+5. Em `Configurações de rede` deixe como na imagem a seguir:
+  ![img/configuracaoDeRede.png](img/configuracaoDeRede.png)
+6. Caso todos os passos anteriores estejam corretos, clique em `Criar`.
+7. A criação do ambiente pode levar alguns minutos.
 ![img/criando.png](img/criando.png)
- 8. Após a criação clique em `abrir IDE`, caso o IDE não tenha aberto automaticamente.
+ 1. Após a criação clique em `Em aberto`, caso o IDE não tenha aberto automaticamente.
    ![img/abriride.png](img/abriride.png)
-9. Para os próximos comandos utilize o console bash que fica no canto inferior do seu IDE.
+2. Para os próximos comandos utilize o console bash que fica no canto inferior do seu IDE.
    ![img/bash.png](img/bash.png)
-10. Execute o comando `npm install -g serverless` para instalar o serverless framework.
+3.  Execute o comando `npm install -g serverless` para instalar o serverless framework.
     ![img/installserverless.png](img/installserverless.png)
-11. Execute o comando `sudo apt  install jq -y` para instalar o software que irá nos ajudar a ler e manipular Jsons no terminal. Caso esse comando de erro, aguarde 3 minutos para o sistema terminar a preparação inicial.
-12. Execute o comando `npm install -g c9` para baixar a extenção que ajudará o Cloud9 a lidar melhor com o como abrir arquivos no IDE.
-13. Execute o comando `git clone https://github.com/vamperst/fiap-gerenciamento-de-apis.git` para clonar o repositório com os exercicios.
-14. Execute o comando `cd fiap-gerenciamento-de-apis/` para entrar na pasta criada pelo git
-15. Execute o comando `cd 00-Setup-e-configuracao` para entrar na pasta com os scripts de Configuração.
-16. Precisamos aumentar o tamanho do volume(HD) do cloud9. Para isso execute o comando  `sh resize.sh`
+4.   Execute o comando `sudo apt update -y && sudo apt  install jq -y` para instalar o software que irá nos ajudar a ler e manipular Jsons no terminal. Caso esse comando de erro, aguarde 3 minutos para o sistema terminar a preparação inicial.
+5.  Execute o comando `npm install -g c9` para baixar a extenção que ajudará o Cloud9 a lidar melhor com o como abrir arquivos no IDE.
+6.  Execute o comando `git clone https://github.com/vamperst/fiap-gerenciamento-de-apis.git` para clonar o repositório com os exercicios.
+7.  Execute o comando `cd fiap-gerenciamento-de-apis/` para entrar na pasta criada pelo git
+8.  Execute o comando `cd 00-Setup-e-configuracao` para entrar na pasta com os scripts de Configuração.
+9.  Precisamos aumentar o tamanho do volume(HD) do cloud9. Para isso execute o comando  `sh resize.sh`
    ![img/resizeEBS](img/resizeEBS.png)
