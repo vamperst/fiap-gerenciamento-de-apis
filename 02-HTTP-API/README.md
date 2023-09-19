@@ -5,7 +5,7 @@ Nesse exercicio você vai criar um infra estrutura com uma [HTTP API do API Gate
 ![](img/1.png)
 
 
-1. Primeiro crie o dynamoDB. Para isso acesse o [console](https://console.aws.amazon.com/dynamodb/) e clique em `Criar tabela` no lado direito da tela.
+1. Primeiro crie o dynamoDB. Para isso acesse o [console](https://us-east-1.console.aws.amazon.com/dynamodbv2/home?region=us-east-1#service) e clique em `Criar tabela` no lado direito da tela.
    
    ![](img/2.png)
 
@@ -21,7 +21,7 @@ Nesse exercicio você vai criar um infra estrutura com uma [HTTP API do API Gate
    
    ![](img/4.png)
 
-5. Agora crie a função lambda que será utilizada na sua arquitetura. Entre no [console](https://console.aws.amazon.com/lambda) do lambda.
+5. Agora crie a função lambda que será utilizada na sua arquitetura. Entre no [console](https://us-east-2.console.aws.amazon.com/lambda/home?region=us-east-1#/functions) do lambda.
    
    ![](img/5.png)
 
@@ -109,7 +109,7 @@ exports.handler = async (event, context) => {
 ![](img/7.png)
 
 11. Clique em `Deploy` ao lado da tecla laranja de Test.
-12. Hora de criar a API HTTP. Entre no [console](https://console.aws.amazon.com/apigateway) do API Gateway para isso.
+12. Hora de criar a API HTTP. Entre no [console](https://us-east-1.console.aws.amazon.com/apigateway/main/apis?region=us-east-1) do API Gateway para isso.
 13. Clique em `Criar API`
 14. Em `API HTTP` clique em `Compilar`
     
@@ -134,7 +134,7 @@ exports.handler = async (event, context) => {
     ![](img/13.png)
 
 20. Clique em `Create`
-21. No método selecione `GET` e na rota digite `/items/{id}` e clique em criar.
+21. No método selecione `GET` e na rota digite `/items/{id}` e clique em `Criar`.
 
     ![](img/14.png)
 
