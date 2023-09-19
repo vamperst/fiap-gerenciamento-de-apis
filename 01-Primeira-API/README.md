@@ -56,7 +56,13 @@ OBJETIVO: Criar a primeira api no serviço [Amazon API Gateway](https://aws.amaz
     
     ![](img/12.png)
 
-18. Expanda os campos até chegar em `POST Create Pet` e clique para abrir no editor.
+18. Expanda os campos até chegar em `POST Create Pet` e clique para abrir no editor. Copie o json abaixo no corpo da requisição:
+    ``` json
+    {
+    "type": "bird",
+    "price": 234.98
+    }
+    ```
     
     ![](img/13.png)
 
