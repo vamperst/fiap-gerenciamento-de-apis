@@ -81,7 +81,7 @@ OBJETIVO: Criar a primeira api no serviço [Amazon API Gateway](https://aws.amaz
 
     ![](img/17.png)
 
-23. Como ultimo teste, o path princial da sua API retorna um HTML quando chamada via médoto GET(Caso dos navegadores). Retorne ao API Gateway e copie a URL da sua API e cole no navegador.
+23. Como ultimo teste, o path principal da sua API retorna um HTML quando chamada via método GET(Caso dos navegadores). Retorne ao API Gateway e copie a URL da sua API e cole no navegador.
     
     ![](img/18.png)
 
