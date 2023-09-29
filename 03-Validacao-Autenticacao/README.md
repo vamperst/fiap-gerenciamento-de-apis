@@ -65,7 +65,9 @@ def lambda_handler(event, context):
     3. Ativar CORS do API Gateway: Selecionado
 13. Com o recurso create récem criado clique em `Ações` e então clique em `Criar Método`
 14. Escolha `POST` na lista proposta.
+
     ![](img/8.png)
+
 15. Preencha a integração conforme as informações abaixo, clique em `Salvar` e de OK na mensagem:
     1.  Tipo de Integração: `Função Lambda`
     2.  Região do Lambda: `us-east-1`
@@ -147,11 +149,12 @@ def lambda_handler(event, context):
 {"message": "$context.error.message", "error": "$context.error.validationErrorString"}
 ```
 29. Clique em `Salvar`.
-
-29. Hora de fazer o deploy da sua API. Clique em `Ações` e `Implantar API`
+30. Na lateral esquerda clique em `Recursos`.
+    
+31. Hora de fazer o deploy da sua API. Clique em `Ações` e `Implantar API`
     ![](img/17.png)
 
-30. Na tela que aparece preencha como descrito:
+32. Na tela que aparece preencha como descrito:
     1. Estágio de implantação: `[Novo estágio]`
     2. Nome do estágio: `dev`
     3. Clique em `Implante`
@@ -172,25 +175,33 @@ def lambda_handler(event, context):
 
 ![](img/22.png)
 
-32. Clique em `Send` na lateral direita e verá que a resposta apenas adiciona o campo Response ao objeto enviado. Isso aconteceu pois os campos foram vlaidados e aprovados.
+32. Clique em `Body` no centro da tela e substitua o json que aparece por:
+``` json
+{
+    "name": "Jose Silva",
+    "age": 43,
+    "dateofregistry": "1989-10-13"
+}
+```
+33. Clique em `Send` na lateral direita e verá que a resposta apenas adiciona o campo Response ao objeto enviado. Isso aconteceu pois os campos foram vlaidados e aprovados.
     
     ![](img/23.png)
 
-33. Altere o json que envia retirando o campo age e clique em `Send` para ver o comportamento de resposta da API.
+34. Altere o json que envia retirando o campo age e clique em `Send` para ver o comportamento de resposta da API.
     
     ![](img/25.png)
 
-34. Faça testes com outros campos e formatos de envios para ver o comportamento das validações. Como por exemplo tentar colocar um mês com número acima de 12.
-35. Devolta ao painel da sua récem criada api no API Gateway no navegador, clique em `Chaves de API`.
-36. Clique em `Açoes` e `Criar chave de API`
+35. Faça testes com outros campos e formatos de envios para ver o comportamento das validações. Como por exemplo tentar colocar um mês com número acima de 12.
+36. Devolta ao painel da sua récem criada api no API Gateway no navegador, clique em `Chaves de API`.
+37. Clique em `Açoes` e `Criar chave de API`
     
     ![](img/26.png)
 
-37. Preencha o campo nome com `fiap-api` e clique em `Salvar`
+38. Preencha o campo nome com `fiap-api` e clique em `Salvar`
     
     ![](img/27.png)
 
-38. Clique em 'mostrar' e copie o texto da chave de API para uso nos próximos passos
+39. Clique em 'mostrar' e copie o texto da chave de API para uso nos próximos passos
 
 ![](img/28.png)
 

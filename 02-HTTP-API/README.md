@@ -21,7 +21,7 @@ Nesse exercicio você vai criar um infra estrutura com uma [HTTP API do API Gate
    
    ![](img/4.png)
 
-5. Agora crie a função lambda que será utilizada na sua arquitetura. Entre no [console](https://us-east-2.console.aws.amazon.com/lambda/home?region=us-east-1#/functions) do lambda.
+5. Agora crie a função lambda que será utilizada na sua arquitetura. Entre no [console](https://us-east-1.console.aws.amazon.com/lambda/home?region=us-east-1#/functions) do lambda.
    
    ![](img/5.png)
 
